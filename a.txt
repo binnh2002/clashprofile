@@ -38,6 +38,8 @@ experimental:
 
 proxies:
   - {name: w13.udpgw.com, server: w13.udpgw.com, port: 443, udp: true, type: trojan, password: c7506a20-ee2d-11ec-b71c-1239d0255272, sni: a.akamaized.net, skip-cert-verify: true}
+  - {name: vn-trojan2.bonds.id, server: vn-trojan2.bonds.id, port: 443, udp: true, type: trojan, password: cd08d940-ee2f-11ec-b7b2-1239d0255272, sni: a.akamaized.net, skip-cert-verify: true}
+  - {name: nl-trojan.bonds.id, server: nl-trojan.bonds.id, port: 443, udp: true, type: trojan, password: f48f4bf0-ee2f-11ec-84cf-1239d0255272, sni: a.akamaized.net, skip-cert-verify: true}
 
 proxy-groups:
   - name: sshkit-generator
@@ -47,6 +49,8 @@ proxy-groups:
     strategy: consistent-hashing
     proxies:
       - w13.udpgw.com
+      - vn-trojan2.bonds.id
+      - nl-trojan.bonds.id
 
 rules:
- - MATCH,sshkit-generator
+ - MATCH,free4g
