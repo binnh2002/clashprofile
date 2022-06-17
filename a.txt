@@ -43,7 +43,7 @@ proxies:
 
 proxy-groups:
   - name: free4g
-    type: load-balance
+    type: select
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     strategy: consistent-hashing
