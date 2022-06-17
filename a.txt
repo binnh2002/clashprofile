@@ -41,6 +41,7 @@ proxies:
   - {name: vn-trojan2.bonds.id, server: vn-trojan2.bonds.id, port: 443, udp: true, type: trojan, password: cd08d940-ee2f-11ec-b7b2-1239d0255272, sni: a.akamaized.net, skip-cert-verify: true}
   - {name: nl-trojan.bonds.id, server: nl-trojan.bonds.id, port: 443, udp: true, type: trojan, password: f48f4bf0-ee2f-11ec-84cf-1239d0255272, sni: a.akamaized.net, skip-cert-verify: true}
   - {name: trojan1.udpgw.com, server: trojan1.udpgw.com, port: 443, udp: true, type: trojan, password: 183712c0-ee46-11ec-9367-1239d0255272, sni: a.akamaized.net, skip-cert-verify: true}
+  - {name: sg6-trojan.bonds.id, server: sg6-trojan.bonds.id, port: 443, udp: true, type: trojan, password: c0595c80-ee46-11ec-8806-1239d0255272, sni: a.akamaized.net, skip-cert-verify: true}
 
 proxy-groups:
   - name: free4g
@@ -53,6 +54,7 @@ proxy-groups:
       - vn-trojan2.bonds.id
       - nl-trojan.bonds.id
       - trojan1.udpgw.com
+      - sg6-trojan.bonds.id
 
 rules:
  - MATCH,free4g
