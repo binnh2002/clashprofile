@@ -42,7 +42,7 @@ proxies:
   - {name: nl-trojan.bonds.id, server: nl-trojan.bonds.id, port: 443, udp: true, type: trojan, password: f48f4bf0-ee2f-11ec-84cf-1239d0255272, sni: a.akamaized.net, skip-cert-verify: true}
 
 proxy-groups:
-  - name: sshkit-generator
+  - name: free4g
     type: load-balance
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
@@ -53,4 +53,4 @@ proxy-groups:
       - nl-trojan.bonds.id
 
 rules:
- - MATCH,sshkit-generator
+ - MATCH,free4g
