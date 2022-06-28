@@ -37,6 +37,10 @@ experimental:
   interface-name: en0
 
 proxies:
+- {name: sg-lb.sshkit.org, server: sg-lb.sshkit.org, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, sni: a.akamaized.net, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshkit/asdklfjlkadsf/62ba949a44648/, headers: {Host: a.akamaized.net}}}
+- {name: sg2.31vpn.com, server: sg2.31vpn.com, port: 80, type: vmess, uuid: 9dc0c6aa-39a1-46be-9938-85999e3c3498, sni: a.akamaized.net, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fastssh/adsfljsadlf/62ba94d1b3b36/, headers: {Host: a.akamaized.net}}}
+- {name: ru.v2-ray.com, server: ru.v2-ray.com, port: 80, type: vmess, uuid: 32e5a3f9-84d3-48ed-be6f-af73b1615421, sni: a.akamaized.net, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fastssh/kdajslf/62ba9535a12bf/, headers: {Host: a.akamaized.net}}}
+- {name: vn2.v2-ray.com, server: vn2.v2-ray.com, port: 80, type: vmess, uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c, sni: a.akamaized.net, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fastssh/kjfajdflasda/62ba957dcce4d/, headers: {Host: a.akamaized.net}}}
 
 proxy-groups:
   - name: free4g
@@ -45,7 +49,11 @@ proxy-groups:
     interval: 300
     strategy: consistent-hashing
     proxies:
-    
+    - sg-lb.sshkit.org
+    - sg2.31vpn.com
+    - ru.v2-ray.com
+    - vn2.v2-ray.com
+
 
 rules:
  - MATCH,free4g
