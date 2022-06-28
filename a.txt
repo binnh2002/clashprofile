@@ -37,14 +37,6 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: w13.udpgw.com, server: w13.udpgw.com, port: 80, udp: true, type: trojan, password: c7506a20-ee2d-11ec-b71c-1239d0255272, sni: a.akamaized.net, skip-cert-verify: true}
-  - {name: vn-trojan2.bonds.id, server: vn-trojan2.bonds.id, port: 80, udp: true, type: trojan, password: cd08d940-ee2f-11ec-b7b2-1239d0255272, sni: a.akamaized.net, skip-cert-verify: true}
-  - {name: nl-trojan.bonds.id, server: nl-trojan.bonds.id, port: 80, udp: true, type: trojan, password: f48f4bf0-ee2f-11ec-84cf-1239d0255272, sni: a.akamaized.net, skip-cert-verify: true}
-  - {name: trojan1.udpgw.com, server: trojan1.udpgw.com, port: 80, udp: true, type: trojan, password: 183712c0-ee46-11ec-9367-1239d0255272, sni: a.akamaized.net, skip-cert-verify: true}
-  - {name: sg6-trojan.bonds.id, server: sg6-trojan.bonds.id, port: 80, udp: true, type: trojan, password: c0595c80-ee46-11ec-8806-1239d0255272, sni: a.akamaized.net, skip-cert-verify: true}
-  - {name: vn1.v2-ray.com, server: vn1.v2-ray.com, port: 80, type: vmess, uuid: 2ef64dc8-ca3c-45b8-ad5f-20871452143b, sni: a.akamaized.net, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fastssh/adsfasdf/62ac8d21e2cae/, headers: {Host: a.akamaized.net}}}
-  - {name: v2ray1.udpgw.com, server: v2ray1.udpgw.com, port: 80, type: vmess, uuid: 12c58856-22f7-48fa-b684-0e9637cb425c, sni: a.akamaized.net, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /howdy, headers: {Host: a.akamaized.net}}}
-  - {name: 🇸🇬 sg-lb.sshkit.org, server: sg-lb.sshkit.org, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, sni: a.akamaized.net, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshkit/binh2002/62ac8380d0e04/, headers: {Host: a.akamaized.net}}}
 
 proxy-groups:
   - name: free4g
@@ -53,14 +45,7 @@ proxy-groups:
     interval: 300
     strategy: consistent-hashing
     proxies:
-      - w13.udpgw.com
-      - vn-trojan2.bonds.id
-      - nl-trojan.bonds.id
-      - trojan1.udpgw.com
-      - sg6-trojan.bonds.id
-      - vn1.v2-ray.com
-      - v2ray1.udpgw.com
-      - 🇸🇬 sg-lb.sshkit.org
+    
 
 rules:
  - MATCH,free4g
