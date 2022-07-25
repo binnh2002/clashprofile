@@ -38,7 +38,7 @@ experimental:
 
 proxies:
 - {name: sg-lb.sshkit.org, server: sg-lb.sshkit.org, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, sni: a.tiktok.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshkit/fadf/62debd2c943ac/, headers: {Host: a.tiktok.com}}}
-- {name: usa-v2ray.sshkit.net, server: usa-v2ray.sshkit.net, port: 443, type: vmess, uuid: e935fe44-df75-40cc-88c1-5829bfc5b9e6, sni: a.tiktok.com, alterId: 64, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshkit, headers: {Host: a.tiktok.com}}}
+- {name: usa-v2ray.sshkit.net, server: usa-v2ray.sshkit.net, port: 80, type: vmess, uuid: e935fe44-df75-40cc-88c1-5829bfc5b9e6, sni: a.tiktok.com, alterId: 64, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshkit, headers: {Host: a.tiktok.com}}}
 - {name: sg3-v2ray.sshkit.org, server: sg3-v2ray.sshkit.org, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, sni: a.tiktok.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshkit/857297730/62dec020731e5/, headers: {Host: a.tiktok.com}}}
 
 
